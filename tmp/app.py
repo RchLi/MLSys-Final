@@ -1,5 +1,5 @@
 import streamlit as st
-from metaflow import Flow
+from metaflow import Flow, namespace
 from metaflow import get_metadata, metadata
 # import matplotlib.pyplot as plt
 import pandas as pd
@@ -14,6 +14,7 @@ def get_latest_successful_run(flow_name: str):
 
 if __name__ == '__main__':
     FLOW_NAME = 'MyClassificationFlow'
+    namespace(None)
     metadata('./tmp')
     print(get_metadata())
     latest_run = get_latest_successful_run(FLOW_NAME)
@@ -26,10 +27,11 @@ if __name__ == '__main__':
     review = st.text_input('Your Review', '')
     if review == '':
         label = ''
+        st.write('The review is ')
     else:
         x = [review]
         x = vectorizer.transform(x)
         label = model.predict(x)[0]
-    st.write('The review is **%s**'%(label))
+        st.write('The review is **%s**'%(label))
 
     
