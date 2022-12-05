@@ -1,0 +1,29 @@
+[MFLOG|0|2022-12-05T21:56:38.059568Z|runtime|388333a5-254f-4deb-bf13-e728cc35731b]Total 20 number of reviews
+[MFLOG|0|2022-12-05T21:56:38.234791Z|runtime|0c3736ab-177f-4fb3-afb5-d1d465446817]                score  frequency  polarity
+[MFLOG|0|2022-12-05T21:56:38.235841Z|runtime|2efca0ec-f518-4c85-897c-716ff2ac680b]word                                      
+[MFLOG|0|2022-12-05T21:56:38.235910Z|runtime|86310f32-5ace-49a6-9387-76aab084eabc]pleased      0.940889          1  0.047044
+[MFLOG|0|2022-12-05T21:56:38.235984Z|runtime|1174c126-decd-4684-8179-41133af389d7]overwhelmed  0.306694          1  0.015335
+[MFLOG|0|2022-12-05T21:56:38.236037Z|runtime|33d25835-9373-41e8-9780-2f8e09fdef7c]limited      0.306694          1  0.015335
+[MFLOG|0|2022-12-05T21:56:38.236089Z|runtime|3430722e-407f-47c4-8cc5-fbe2098124b8]damn         0.256606          1  0.012830
+[MFLOG|0|2022-12-05T21:56:38.236140Z|runtime|d941d9a5-e259-4dbc-ae28-b824039bde3b]trust        0.256606          1  0.012830
+[MFLOG|0|2022-12-05T21:56:38.236189Z|runtime|2cefd341-4c5e-41ec-8ed6-848bac5227e5]regret       0.256606          1  0.012830
+[MFLOG|0|2022-12-05T21:56:38.236238Z|runtime|d1898a95-8f70-44e4-b5d9-39cceeaa0676]smile        0.141369          1  0.007068
+[MFLOG|0|2022-12-05T21:56:38.236281Z|runtime|be7e8645-ada2-4692-9948-d64b128a0fe9]variety      0.062416          2  0.006242
+[MFLOG|0|2022-12-05T21:56:38.236323Z|runtime|b69c2d47-ebe1-4b39-8759-2f3302a8d5a9]friendly     0.062416          2  0.006242
+[MFLOG|0|2022-12-05T21:56:38.236364Z|runtime|43bef60f-0c33-4f09-bc86-47394910f11a]affordable   0.087359          1  0.004368
+[MFLOG|0|2022-12-05T21:56:38.236405Z|runtime|8ac721e8-9ffd-4ae1-a602-20397c261632]clean        0.087359          1  0.004368
+[MFLOG|0|2022-12-05T21:56:38.236446Z|runtime|cd25e0ab-0093-4cd7-a7f4-ddc30029f12c]delicious    0.087359          1  0.004368
+[MFLOG|0|2022-12-05T21:56:38.236491Z|runtime|d30ecf5c-30bb-4e6d-956c-31a4d0a829e5]soft         0.033551          2  0.003355
+[MFLOG|0|2022-12-05T21:56:38.236533Z|runtime|7e830060-df33-48b6-9b88-21a878e6a271]worth        0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236581Z|runtime|8797b114-4c5c-402d-aae8-e7238b9d1439]top          0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236622Z|runtime|bc0e4ba2-c0b7-40f0-9970-0e39c93c3abe]wrong        0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236663Z|runtime|bb49aa69-b60d-4efc-bfa9-35dee65c1191]hated        0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236704Z|runtime|f4f3bb13-ba76-46c6-8b52-4764bade8159]fried        0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236745Z|runtime|e0ad0d79-ba8c-4148-a984-01eb764c9321]fatty        0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236786Z|runtime|1d3761ab-fc99-4500-bd3c-7ba55715bc06]expensive    0.031208          1  0.001560
+[MFLOG|0|2022-12-05T21:56:38.236830Z|runtime|bf1c8200-5069-4ff2-8336-79a0ebc42aa6]           score  frequency  polarity
+[MFLOG|0|2022-12-05T21:56:38.243644Z|runtime|3e4e460d-3a11-407a-904e-1aeeb9fd1f53]word                                 
+[MFLOG|0|2022-12-05T21:56:38.243823Z|runtime|87320e55-a46a-4345-8cdd-715e65b2003b]pricey -0.346281          1 -0.017314
+[MFLOG|0|2022-12-05T21:56:38.243881Z|runtime|e624e574-ff16-4f30-8c1e-601ac1e7b571]fast   -0.151742          1 -0.007587
+[MFLOG|0|2022-12-05T21:56:38.243927Z|runtime|0ce5da4e-0bbf-49db-a838-99c5e43c87c6]fresh  -0.023736          2 -0.002374
+[MFLOG|0|2022-12-05T21:56:38.243976Z|runtime|5dd79f66-182a-4212-9634-24ed9e75fdb8]The accurancy_score on Japanese test set is:0.6388888888888888

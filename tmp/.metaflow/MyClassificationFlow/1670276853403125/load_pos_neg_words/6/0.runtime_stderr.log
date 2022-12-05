@@ -1,0 +1,28 @@
+[MFLOG|0|2022-12-05T21:47:57.599927Z|runtime|469e7188-ae2a-45ed-915c-b2fab02cf804]<flow MyClassificationFlow step load_pos_neg_words> failed:
+[MFLOG|0|2022-12-05T21:47:57.629720Z|runtime|c691d1da-4d64-400d-b30f-40b049b778f7]    Internal error
+[MFLOG|0|2022-12-05T21:47:57.630890Z|runtime|11741073-3993-4822-932b-fff1a11c8c7d]Traceback (most recent call last):
+[MFLOG|0|2022-12-05T21:47:57.630970Z|runtime|00411137-fecd-4479-9a12-f5417db41b85]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/cli.py", line 1171, in main
+[MFLOG|0|2022-12-05T21:47:57.631037Z|runtime|4243df7f-9d18-4bd3-ab88-7544fa31a8a5]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-12-05T21:47:57.631249Z|runtime|b8d00001-2aba-499b-a959-080f91e50045]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2022-12-05T21:47:57.631333Z|runtime|ba1dc72f-c1a4-407e-9a98-9c77bb0ce337]    return self.main(args, kwargs)
+[MFLOG|0|2022-12-05T21:47:57.921384Z|runtime|330f1de4-b69e-412a-8815-df6c0938b9ab]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2022-12-05T21:47:57.921739Z|runtime|6383a6cb-46ea-40ca-8e32-6d4b5f6a4c8c]    rv = self.invoke(ctx)
+[MFLOG|0|2022-12-05T21:47:57.921802Z|runtime|dba23fb8-1b6a-47c4-bda5-2a4d121d734c]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-12-05T21:47:57.921849Z|runtime|a1746e15-abab-4094-affb-fdcb37d02f77]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-12-05T21:47:57.921889Z|runtime|ac7c782d-dfcb-42d7-b800-ff2cc51531c2]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-12-05T21:47:57.921930Z|runtime|813b95c0-6128-4701-a4f0-13e4842735ec]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-12-05T21:47:57.921968Z|runtime|3b08aa8b-ce18-4c4a-bc1b-5ab2c858f9d8]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2022-12-05T21:47:57.922006Z|runtime|d8c62962-2193-4d5e-84f1-2a5ca7c8f711]    return callback(args, kwargs)
+[MFLOG|0|2022-12-05T21:47:57.922052Z|runtime|e0b42064-fa45-4ddc-8492-12df2e66d9e7]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2022-12-05T21:47:57.922094Z|runtime|1b1d16f0-552e-43dc-a042-99b6171d1e78]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-12-05T21:47:57.922134Z|runtime|2cc70b97-fb23-49ad-ade4-bf3ff83a03cf]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/cli.py", line 580, in step
+[MFLOG|0|2022-12-05T21:47:57.922174Z|runtime|6d76c94d-bbe8-49ec-9e37-e8e760726f4e]    task.run_step(
+[MFLOG|0|2022-12-05T21:47:57.922214Z|runtime|551b9da3-158c-461b-980e-df4805c7f21e]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/task.py", line 587, in run_step
+[MFLOG|0|2022-12-05T21:47:57.922252Z|runtime|9966949c-2de3-469c-8144-5199312d9037]    self._exec_step_function(step_func)
+[MFLOG|0|2022-12-05T21:47:57.922321Z|runtime|d4a09d57-48e8-4b9c-ac54-78527173322a]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/task.py", line 61, in _exec_step_function
+[MFLOG|0|2022-12-05T21:47:57.922409Z|runtime|52e85d5b-a7af-4809-ae81-7b1b1692e308]    step_function()
+[MFLOG|0|2022-12-05T21:47:57.922458Z|runtime|d6fd5af6-1c03-408a-856e-5919ac25bbbc]  File "/Users/lyric/Dropbox/Code/MLSys-Final/tmp/final.py", line 290, in load_pos_neg_words
+[MFLOG|0|2022-12-05T21:47:57.922501Z|runtime|abd0a3ef-282a-452d-a318-bc5d50c31393]    file_negative = open('../data/negative_.txt')
+[MFLOG|0|2022-12-05T21:47:57.922546Z|runtime|7689dc84-5a8b-4ba6-9fc3-2651fc252041]FileNotFoundError: [Errno 2] No such file or directory: '../data/negative_.txt'
+[MFLOG|0|2022-12-05T21:47:57.922600Z|runtime|1b13118a-57d2-441c-94e2-cd17b527d65f]
+[MFLOG|0|2022-12-05T21:47:57.923143Z|runtime|bb072039-4c30-49e8-ae7f-144096d4842e]Task failed.

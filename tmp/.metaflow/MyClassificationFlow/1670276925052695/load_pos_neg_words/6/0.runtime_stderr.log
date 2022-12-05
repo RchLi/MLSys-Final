@@ -1,0 +1,32 @@
+[MFLOG|0|2022-12-05T21:49:08.339165Z|runtime|804a60c6-ee67-4c68-8330-39afc4bd3f49]<flow MyClassificationFlow step load_pos_neg_words> failed:
+[MFLOG|0|2022-12-05T21:49:08.344310Z|runtime|d6d0fbe7-448a-4a24-b290-50d8e43b1e96]    Internal error
+[MFLOG|0|2022-12-05T21:49:08.344960Z|runtime|91085ae8-1cb3-48c1-a097-2d32ebd5142f]Traceback (most recent call last):
+[MFLOG|0|2022-12-05T21:49:08.345035Z|runtime|542b9754-0238-44c4-a974-38d31f764300]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/cli.py", line 1171, in main
+[MFLOG|0|2022-12-05T21:49:08.345107Z|runtime|bb40c45b-670d-456b-a8dc-858b13c57482]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-12-05T21:49:08.345158Z|runtime|bfa3bd96-7f1f-4af9-93c1-7e36e09820c1]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2022-12-05T21:49:08.345214Z|runtime|fa5e73e4-2c75-4b44-93a3-e8949f9dd832]    return self.main(args, kwargs)
+[MFLOG|0|2022-12-05T21:49:08.641337Z|runtime|4a3b6934-9d05-444b-9926-56326b8b3d79]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2022-12-05T21:49:08.641601Z|runtime|4e107de7-ad38-407a-81d8-bf10007d19d9]    rv = self.invoke(ctx)
+[MFLOG|0|2022-12-05T21:49:08.641672Z|runtime|87bc50bb-8eca-48f8-9982-3ca5f2982954]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-12-05T21:49:08.641725Z|runtime|2da389b1-c607-47e7-8676-4eb9d1aa2bb8]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-12-05T21:49:08.641769Z|runtime|a01b31ed-f1d9-4195-b632-1c855fc5af50]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-12-05T21:49:08.641809Z|runtime|1e61e9c7-46be-4ff8-8e9d-1fa020693dd8]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-12-05T21:49:08.641848Z|runtime|762622b5-36f9-44b9-adbb-534c8296f602]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2022-12-05T21:49:08.641888Z|runtime|b2abdf75-d24e-4809-9606-511fe7fe124d]    return callback(args, kwargs)
+[MFLOG|0|2022-12-05T21:49:08.641926Z|runtime|47cdcdff-aac3-4a3e-bcf2-7af2b830fbb2]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2022-12-05T21:49:08.641965Z|runtime|9920a429-5150-4640-a0a4-28ecdd8a40c2]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-12-05T21:49:08.642005Z|runtime|aa3b3d84-4def-4f82-8b30-ba0026138193]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/cli.py", line 580, in step
+[MFLOG|0|2022-12-05T21:49:08.642043Z|runtime|8f8d7404-cc03-4484-80e5-24673bbbdd24]    task.run_step(
+[MFLOG|0|2022-12-05T21:49:08.642081Z|runtime|7a5a8ed7-9b8f-41f7-bb00-2c4252c0f880]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/task.py", line 587, in run_step
+[MFLOG|0|2022-12-05T21:49:08.642119Z|runtime|0fe599f9-9989-4007-bf4a-d4be3321f532]    self._exec_step_function(step_func)
+[MFLOG|0|2022-12-05T21:49:08.642184Z|runtime|793bd0d6-c823-4e98-906b-e7bc91e64951]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/task.py", line 61, in _exec_step_function
+[MFLOG|0|2022-12-05T21:49:08.642385Z|runtime|10923976-041c-4885-aa46-e064dd468f1e]    step_function()
+[MFLOG|0|2022-12-05T21:49:08.642439Z|runtime|d5b5e414-0a15-4346-96c8-21ba8aca4cd6]  File "/Users/lyric/Dropbox/Code/MLSys-Final/tmp/final.py", line 292, in load_pos_neg_words
+[MFLOG|0|2022-12-05T21:49:08.642483Z|runtime|3765471a-120d-4157-9bcb-1618f70e7cbd]    self.negative_words = [word[0] for word in reader]
+[MFLOG|0|2022-12-05T21:49:08.642527Z|runtime|c1509d09-76f2-49c6-af65-499400932b16]  File "/Users/lyric/Dropbox/Code/MLSys-Final/tmp/final.py", line 292, in <listcomp>
+[MFLOG|0|2022-12-05T21:49:08.642576Z|runtime|09d16b64-17ba-45d8-8d45-10502b018213]    self.negative_words = [word[0] for word in reader]
+[MFLOG|0|2022-12-05T21:49:08.642618Z|runtime|fe51a9c2-891b-47f7-b024-390485f71117]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/codecs.py", line 322, in decode
+[MFLOG|0|2022-12-05T21:49:08.642659Z|runtime|97821af5-af98-4381-bfe1-52fdd4991da4]    (result, consumed) = self._buffer_decode(data, self.errors, final)
+[MFLOG|0|2022-12-05T21:49:08.642700Z|runtime|a222287e-d196-488d-8bfe-a98385847bec]UnicodeDecodeError: 'utf-8' codec can't decode byte 0xef in position 6977: invalid continuation byte
+[MFLOG|0|2022-12-05T21:49:08.642744Z|runtime|63a931e7-4fcf-4531-b4c3-ae2c6f5b79b0]
+[MFLOG|0|2022-12-05T21:49:08.643410Z|runtime|504777b7-a4cf-46dd-a720-23efc42bd0f9]Task failed.

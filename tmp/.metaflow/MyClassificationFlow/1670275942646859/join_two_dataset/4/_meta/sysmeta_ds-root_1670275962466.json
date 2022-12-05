@@ -1,0 +1,1 @@
+{"flow_id": "MyClassificationFlow", "run_number": "1670275942646859", "step_name": "join_two_dataset", "task_id": "4", "field_name": "ds-root", "type": "ds-root", "value": "/Users/lyric/Dropbox/Code/MLSys-Final/tmp/.metaflow", "tags": ["attempt_id:0"], "user_name": "lyric", "ts_epoch": 1670275962466}

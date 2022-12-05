@@ -1,0 +1,1 @@
+{"flow_id": "MyClassificationFlow", "run_number": "1670276262669842", "step_name": "join_two_dataset", "task_id": "4", "field_name": "metaflow_version", "type": "metaflow_version", "value": "2.7.15", "tags": ["attempt_id:0"], "user_name": "lyric", "ts_epoch": 1670276279941}

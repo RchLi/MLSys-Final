@@ -1,0 +1,28 @@
+[MFLOG|0|2022-12-05T21:28:17.764769Z|runtime|78003c71-ec1f-42ca-b52d-bf2386fda5a0]<flow MyClassificationFlow step load_business_data> failed:
+[MFLOG|0|2022-12-05T21:28:17.768468Z|runtime|58c8d2c9-5244-422e-a197-28147b106662]    Internal error
+[MFLOG|0|2022-12-05T21:28:17.769692Z|runtime|bb73cf45-8dbf-43b7-b226-9973d590289f]Traceback (most recent call last):
+[MFLOG|0|2022-12-05T21:28:17.769799Z|runtime|4b987539-021e-4e0d-bddf-1641350fb1a8]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/cli.py", line 1171, in main
+[MFLOG|0|2022-12-05T21:28:17.769864Z|runtime|c5c03d8a-2020-4550-829f-8870403ebe3b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-12-05T21:28:17.769916Z|runtime|3fec0473-8d13-40ed-8327-d1b5f354316a]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2022-12-05T21:28:17.769969Z|runtime|07e5bd42-87ca-4b72-a3cb-85b5c2a13145]    return self.main(args, kwargs)
+[MFLOG|0|2022-12-05T21:28:18.049174Z|runtime|97fb0f63-018d-4e9c-9c5b-c83746f8b069]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2022-12-05T21:28:18.049462Z|runtime|48ab01d3-0fb7-4ed5-b59c-83de202f9add]    rv = self.invoke(ctx)
+[MFLOG|0|2022-12-05T21:28:18.049538Z|runtime|b41da840-1930-4489-be86-60b1d2ee5f4f]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-12-05T21:28:18.049590Z|runtime|0860fcdd-834e-4af0-ab63-d13fceef459e]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-12-05T21:28:18.049634Z|runtime|f4124732-1722-46d0-b427-712f0bc2e93a]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-12-05T21:28:18.049677Z|runtime|de8db9ad-7ede-4a52-b826-d0cdb03119a9]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-12-05T21:28:18.049722Z|runtime|21d414eb-16ed-4699-9609-114c56950d30]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2022-12-05T21:28:18.049764Z|runtime|3b95e20a-338b-4054-8607-14c6529946f2]    return callback(args, kwargs)
+[MFLOG|0|2022-12-05T21:28:18.049977Z|runtime|d302c1f4-47fa-470f-b4f2-9e6c299938ef]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2022-12-05T21:28:18.050051Z|runtime|cff9e06a-099a-476a-b008-89dc21a58a1e]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-12-05T21:28:18.050096Z|runtime|e0967688-b1df-4128-95aa-56fdd7b7ad29]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/cli.py", line 580, in step
+[MFLOG|0|2022-12-05T21:28:18.050140Z|runtime|f116fc96-0862-4212-b1d5-9ea0080725a7]    task.run_step(
+[MFLOG|0|2022-12-05T21:28:18.050187Z|runtime|c28dc82b-a55e-409a-a0f3-8c749e112ac0]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/task.py", line 587, in run_step
+[MFLOG|0|2022-12-05T21:28:18.050230Z|runtime|0798ab97-cff0-401f-86a6-10f39cc5675b]    self._exec_step_function(step_func)
+[MFLOG|0|2022-12-05T21:28:18.050275Z|runtime|edf4d0c8-9f21-4219-8143-1afe93da6d65]  File "/Users/lyric/opt/anaconda3/envs/mlsys/lib/python3.9/site-packages/metaflow/task.py", line 61, in _exec_step_function
+[MFLOG|0|2022-12-05T21:28:18.050316Z|runtime|54d9ec49-9ffc-4cf6-ab0f-bb65e36039ed]    step_function()
+[MFLOG|0|2022-12-05T21:28:18.050357Z|runtime|eab9b9da-5740-4ad4-8cfb-cac5167e0c1e]  File "/Users/lyric/Dropbox/Code/MLSys-Final/tmp/final.py", line 157, in load_business_data
+[MFLOG|0|2022-12-05T21:28:18.050397Z|runtime|72815938-c228-4a47-8b7b-8513604b857c]    data_file_1 = open("./archive/yelp_academic_dataset_business.json")
+[MFLOG|0|2022-12-05T21:28:18.050442Z|runtime|472ef613-a662-4bcb-b05f-441e6f56fe59]FileNotFoundError: [Errno 2] No such file or directory: './archive/yelp_academic_dataset_business.json'
+[MFLOG|0|2022-12-05T21:28:18.050485Z|runtime|0b9e4f24-b4a1-45a4-9b7d-eab3d5d00545]
+[MFLOG|0|2022-12-05T21:28:18.053442Z|runtime|73ea8709-0f30-44e2-a2c7-657b22b9cbda]Task failed.
