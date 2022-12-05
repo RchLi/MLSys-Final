@@ -1,7 +1,7 @@
 import streamlit as st
 from metaflow import Flow
 from metaflow import get_metadata, metadata
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
