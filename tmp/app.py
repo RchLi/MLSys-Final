@@ -14,7 +14,7 @@ def get_latest_successful_run(flow_name: str):
 
 if __name__ == '__main__':
     FLOW_NAME = 'MyClassificationFlow'
-    metadata('./')
+    metadata('./tmp')
     print(get_metadata())
     latest_run = get_latest_successful_run(FLOW_NAME)
     model = latest_run.data.svm_Jap
