@@ -1,0 +1,8 @@
+ 1）yelp_reviews_3.csv 是根据廖最后在群里发的excel表 另存为然后读取的
+2）为了得到 训练每个餐厅种类的 model 和 data 的 transform model 我对 get_polarity_score多加了两个output，以用来在test集上test 并加了新的用来test的函数
+3)因为写到metaflow里总是报错：找不到positive_words and negative_words:我对 get_polarity_score多加了两个input，并把filter_words 这个function写到了 get_polarity_score里面
+4）因为使用了更小的review数据集，导致有的单词没有 原先的这句话（get_polarity_score最后）： cuisine_polarity_score.drop(cuisine_polarity_score.loc[unuseful_words].index, axis=0, inplace=True) 会报错 我把这句话删掉了并变成了for 循环
+
+5）如果使用原先的review.json 4）不用改
+
+6）final.ipynb 是这个 .py的jupyter 版本
