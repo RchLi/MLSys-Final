@@ -17,7 +17,7 @@ if __name__ == '__main__':
     namespace(None)
     metadata('./tmp')
     #st.write(get_metadata())
-    st.write(os.listdir('./tmp'))
+    st.write(os.listdir('./tmp/.metaflow'))
     latest_run = Flow(FLOW_NAME).latest_successful_run
     #latest_run = get_latest_successful_run(FLOW_NAME)
     model = latest_run.data.svm_Jap
