@@ -7,7 +7,6 @@ import numpy as np
 
 @st.cache
 def get_latest_successful_run(flow_name: str):
-    "Gets the latest successfull run."
     for r in Flow(flow_name).runs():
         if r.successful: 
             return r
