@@ -6,6 +6,7 @@ import os
 import pandas as pd
 import seaborn as sns
 import matplotlib 
+import pickle
 
 pd.set_option('display.max_columns',None)
 pd.options.display.max_seq_items = 2000
@@ -317,6 +318,11 @@ class MyClassificationFlow(FlowSpec):
 
         Japanese_test_score=self.test_data(Japanese_test,vectorizer_Jap,svm_Jap)
         print("The accurancy_score on Japanese test set is:{}".format(Japanese_test_score))
+        with open('../models/svm.pkl', 'wb') as f:
+            pickle.dump(svm_Jap, f)
+        with open('../models/vec.pkl', 'wb') as f:
+            pickle.dump(vectorizer_Jap, f)
+
         self.vectorizer_Jap=vectorizer_Jap
         self.svm_Jap=svm_Jap
         self.next(self.end)
