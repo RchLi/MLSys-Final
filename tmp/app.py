@@ -9,17 +9,15 @@ import os
 @st.cache
 def get_latest_successful_run(flow_name: str):
     for r in Flow(flow_name).runs():
-        if r.successful: 
-            return r
+        #if r.successful: 
+        return r
 
 if __name__ == '__main__':
     FLOW_NAME = 'MyClassificationFlow'
     namespace(None)
     metadata('./tmp')
-    #st.write(get_metadata())
-    st.write(os.listdir('./tmp/.metaflow/MyClassificationFlow'))
-    latest_run = Flow(FLOW_NAME).latest_successful_run
-    #latest_run = get_latest_successful_run(FLOW_NAME)
+    #latest_run = Flow(FLOW_NAME).runs()[0]
+    latest_run = get_latest_successful_run(FLOW_NAME)
     model = latest_run.data.svm_Jap
     vectorizer = latest_run.data.vectorizer_Jap
     positive_words = latest_run.data.positive_words
