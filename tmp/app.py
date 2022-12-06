@@ -16,12 +16,12 @@ if __name__ == '__main__':
     FLOW_NAME = 'MyClassificationFlow'
     namespace(None)
     metadata('./tmp')
-    # st.write(get_metadata())
-    # latest_run = Flow(FLOW_NAME).latest_successful_run
-    # model = latest_run.data.svm_Jap
-    # vectorizer = latest_run.data.vectorizer_Jap
-    # positive_words = latest_run.data.positive_words
-    # negative_words = latest_run.data.negative_words
+    st.write(get_metadata())
+    latest_run = Flow(FLOW_NAME).latest_successful_run
+    model = latest_run.data.svm_Jap
+    vectorizer = latest_run.data.vectorizer_Jap
+    positive_words = latest_run.data.positive_words
+    negative_words = latest_run.data.negative_words
 
     st.markdown("# Review Sentiment Analysis")
     review = st.text_input('Your Review', '')
