@@ -4,6 +4,7 @@ from metaflow import get_metadata, metadata
 # import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import os
 
 @st.cache
 def get_latest_successful_run(flow_name: str):
@@ -15,9 +16,10 @@ if __name__ == '__main__':
     FLOW_NAME = 'MyClassificationFlow'
     namespace(None)
     metadata('./tmp')
-    st.write(get_metadata())
-    #latest_run = Flow(FLOW_NAME).latest_successful_run
-    latest_run = get_latest_successful_run(FLOW_NAME)
+    #st.write(get_metadata())
+    st.write(os.listdir('./tmp'))
+    latest_run = Flow(FLOW_NAME).latest_successful_run
+    #latest_run = get_latest_successful_run(FLOW_NAME)
     model = latest_run.data.svm_Jap
     vectorizer = latest_run.data.vectorizer_Jap
     positive_words = latest_run.data.positive_words
