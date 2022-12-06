@@ -17,7 +17,7 @@ if __name__ == '__main__':
     metadata('./tmp')
     st.write(get_metadata())
     #latest_run = Flow(FLOW_NAME).latest_successful_run
-    latest_run = get_latest_successful_run()
+    latest_run = get_latest_successful_run(FLOW_NAME)
     model = latest_run.data.svm_Jap
     vectorizer = latest_run.data.vectorizer_Jap
     positive_words = latest_run.data.positive_words
