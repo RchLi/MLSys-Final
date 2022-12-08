@@ -1,1 +1,0 @@
-{"flow_id": "MyClassificationFlow", "run_number": "1670277286124154", "step_name": "load_pos_neg_words", "task_id": "6", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "False", "tags": ["attempt_id:0"], "user_name": "lyric", "ts_epoch": 1670277309111}

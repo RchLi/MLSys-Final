@@ -1,1 +1,0 @@
-{"flow_id": "MyClassificationFlow", "run_number": "1670276262669842", "step_name": "load_pos_neg_words", "task_id": "6", "field_name": "ds-root", "type": "ds-root", "value": "/Users/lyric/Dropbox/Code/MLSys-Final/tmp/.metaflow", "tags": ["attempt_id:0"], "user_name": "lyric", "ts_epoch": 1670276285996}
