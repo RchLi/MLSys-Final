@@ -38,16 +38,19 @@ def city_distribution(data, k=15):
 def word_img(words):
     text = ' '.join(words)
     wordcloud = WordCloud(collocations = False, background_color = 'white').generate(text)
-    fig, ax = plt.subplots(figsize=(11, 7))
+    fig, ax = plt.subplots(figsize=(9, 6))
     ax.imshow(wordcloud)
     plt.axis("off")
     #plt.tight_layout(pad = 0)
     return fig
 
 if __name__ == '__main__':
-    st.set_page_config(page_title="Restaurant Information",layout='wide')
+    st.set_page_config(page_title="Restaurant Information",
+                    layout='wide'
+    )
 
     st.sidebar.header("Restaurant Information")
+
 
     col1, col2 = st.columns(2)
     state = pd.read_csv('./data/distribution_state.csv', index_col=[0])
@@ -60,15 +63,32 @@ if __name__ == '__main__':
         category = state.index
         x = st.selectbox('Choose the type of your restaurant', category)
 
-        st.markdown('## Important factors for %s restaurant' % (x))
+        st.markdown('## Important Words for %s Restaurant' % (x))
         fig = word_img(cusine_words[x])
         st.pyplot(fig)
 
     with col2:
-        st.markdown('## Distribution of %s restaurant' % (x))
+        st.markdown('## Distribution of %s Restaurant' % (x))
         fig = state_distribution(state.loc[x])
         st.pyplot(fig)
         fig = city_distribution(city.loc[x])
         st.pyplot(fig)
-  
+    
+    with st.sidebar:
+        st.write('The words our model find important and the distribution of restaurants are shown on the right')
+        st.markdown("## Analyze Reviews with Our Model")
+        # load model with pickle
+        with open('./models/svm.pkl', 'rb') as f:
+            model = pickle.load(f)
+        with open('./models/vec.pkl', 'rb') as f:
+            vectorizer = pickle.load(f)
+        review = st.text_input('Your Review', '')
+        if review == '':
+            label = ''
+            st.write('The review is ')
+        else:
+            x = [review]
+            x = vectorizer.transform(x)
+            label = model.predict(x)[0]
+            st.write('The review is **%s**'%(label))
     

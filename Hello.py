@@ -38,8 +38,7 @@ if __name__ == '__main__':
     #     st.write('The review is **%s**'%(label))
 
     st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
+        page_title="Hello"
     )
     st.write('# Hello 👋')
     st.markdown(
