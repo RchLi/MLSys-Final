@@ -14,7 +14,7 @@ if __name__ == '__main__':
     )
     st.write('# Hello')
     st.markdown(
-        """Z
+        """
         In this project we build a model to analyze the sentiment
         of a review based on Yelp review data.
         
