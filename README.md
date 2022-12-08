@@ -1,5 +1,23 @@
 # README
 
+```unix
+.
+├── data
+├── models
+│   ├── svm.pkl
+│   └── vec.pkl
+├── pages
+│   └── 1_Restaurant_Information.py
+├── source
+│   ├── final.ipynb
+│   ├── final.py
+│   ├── generate_data.ipynb
+│   └── train.py
+├── Hello.py
+├── README.md
+└── requirements.txt
+```
+
 ## Installation
 
 ```shell
