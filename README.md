@@ -45,7 +45,7 @@ The comet result is shown below
 ![comet](./pages/comet.png)
 
 ## Generate Websites
-
+Hello.py function as app.py and generates the website.
 ```shel
 streamlit run Hello.py
 ```
