@@ -2,13 +2,13 @@
 
 ```unix
 .
-├── data									Training data
+├── data		Training data
 ├── models
 │   ├── svm.pkl
 │   └── vec.pkl
 ├── pages
 │   └── 1_Restaurant_Information.py
-├── source								Metaflow code of training	models				
+├── source		Metaflow code of training	models				
 │   ├── final.ipynb
 │   ├── final.py
 │   ├── generate_data.ipynb
@@ -39,6 +39,10 @@ python source/train.py run
 ```
 
 train.py is a metaflow file that pipelines the process of data processing and model training. It compares models' performance of different hyperparameters and stores the best one in models file.
+
+The comet result is shown below
+
+![comet](./pages/comet.png)
 
 ## Generate Websites
 
