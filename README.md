@@ -8,7 +8,7 @@
 │   └── vec.pkl
 ├── pages
 │   └── 1_Restaurant_Information.py
-├── source		Metaflow code of training	models				
+├── source		Metaflow code of training				
 │   ├── final.ipynb
 │   ├── final.py
 │   ├── generate_data.ipynb
