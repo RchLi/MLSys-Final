@@ -13,7 +13,7 @@
 │   ├── final.py
 │   ├── generate_data.ipynb
 │   └── train.py
-├── Hello.py
+├── Hello.py		Website file
 ├── README.md
 └── requirements.txt
 └── Final_Project.ipynb		Jupyternotebook containing all processes					
