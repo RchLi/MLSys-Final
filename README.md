@@ -2,13 +2,13 @@
 
 ```unix
 .
-├── data
+├── data									Training data
 ├── models
 │   ├── svm.pkl
 │   └── vec.pkl
 ├── pages
 │   └── 1_Restaurant_Information.py
-├── source
+├── source								Metaflow code of training	models				
 │   ├── final.ipynb
 │   ├── final.py
 │   ├── generate_data.ipynb
@@ -16,6 +16,8 @@
 ├── Hello.py
 ├── README.md
 └── requirements.txt
+└── Final_Project.ipynb		Jupyternotebook containing all processes					
+
 ```
 
 ## Installation
@@ -25,6 +27,10 @@ git clone git@github.com:RchLi/MLSys-Final.git
 cd MLSys-Final
 pip install -r requirements.txt
 ```
+
+## Jupyter Notebook
+
+Final_Project.ipynb contains all the containing all the EDA, data preprocessing, model training, testing.
 
 ## Train Models
 
